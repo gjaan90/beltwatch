@@ -40,7 +40,7 @@ export default async function ConveyorPage({
           {c.region} · belt {c.beltWidthMm} mm · {c.cameras} cameras ·{" "}
           {c.material.replace("_", " ")}
           {c.id === "demo1"
-            ? ". Demo machine with attached ore-conveyor footage — overlays show how misalignment Watch looks on live video (mock wander until models are trained)."
+            ? ". Demo machine with along-belt misalignment footage — overlays show how Alarm looks on live video (mock wander until models are trained)."
             : ". Misalignment uses the same principle as industrial Visual AI: track belt edges against the idler centreline, trend wander in mm, then raise Watch / Alarm with on-screen evidence."}
         </p>
 
