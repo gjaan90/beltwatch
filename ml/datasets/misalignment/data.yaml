@@ -1,10 +1,8 @@
-# Starter stub — replace by exporting from Roboflow (beltsight-misalignment)
-path: .
+# Demo1 kickstart — local along-belt frames
+path: C:/Users/gjaan/BeltSight/ml/datasets/misalignment
 train: images/train
 val: images/val
-test: images/test
 
 names:
   0: belt
-  1: idler
-  2: structure
+  1: centre_ref
