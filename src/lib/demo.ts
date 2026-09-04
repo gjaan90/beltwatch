@@ -66,6 +66,35 @@ function detectorsFor(
 
 export const conveyors: Conveyor[] = [
   {
+    id: "demo1",
+    name: "Demo1",
+    site: "Demo Plant",
+    region: "Local preview",
+    cameras: 1,
+    beltWidthMm: 1600,
+    status: "watch",
+    lastSeen: "live",
+    idlers: 24,
+    material: "iron_ore",
+    videoSrc: "/samples/demo1-conveyor.mp4",
+    detectors: detectorsFor(
+      12,
+      "watch",
+      {
+        status: "ok",
+        value: "Clear",
+        detail: "Load within envelope on demo clip",
+        conf: 0.8,
+      },
+      {
+        status: "ok",
+        value: "Healthy",
+        detail: "No splice pass in this clip",
+        conf: 0.75,
+      }
+    ),
+  },
+  {
     id: "cv-12",
     name: "CV-12 Overland",
     site: "Iron Ridge",
@@ -180,6 +209,20 @@ export const conveyors: Conveyor[] = [
 ];
 
 export const alerts: AlertEvidence[] = [
+  {
+    id: "a0",
+    when: "now",
+    whenIso: "2026-09-04T19:00:00+10:00",
+    conveyorId: "demo1",
+    conveyor: "Demo1",
+    camera: "CAM-1",
+    kind: "misalignment",
+    text: "Demo clip: wander holding +12 mm vs idler centreline",
+    status: "watch",
+    metric: "+12 mm",
+    confidence: 0.86,
+    overlay: baseOverlay(12, 1600),
+  },
   {
     id: "a1",
     when: "18:11",

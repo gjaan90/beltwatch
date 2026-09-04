@@ -14,6 +14,8 @@ export type Conveyor = {
   idlers: number;
   material: "coal" | "iron_ore" | "stone" | "mixed";
   detectors: DetectorSnapshot[];
+  /** Optional demo / live camera clip served from /public */
+  videoSrc?: string;
 };
 
 export type DetectorSnapshot = {

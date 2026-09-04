@@ -38,9 +38,10 @@ export default async function ConveyorPage({
         <h1>{c.name}</h1>
         <p className="lead">
           {c.region} · belt {c.beltWidthMm} mm · {c.cameras} cameras ·{" "}
-          {c.material.replace("_", " ")}. Misalignment uses the same principle as
-          industrial Visual AI: track belt edges against the idler centreline,
-          trend wander in mm, then raise Watch / Alarm with on-screen evidence.
+          {c.material.replace("_", " ")}
+          {c.id === "demo1"
+            ? ". Demo machine with attached ore-conveyor footage — overlays show how misalignment Watch looks on live video (mock wander until models are trained)."
+            : ". Misalignment uses the same principle as industrial Visual AI: track belt edges against the idler centreline, trend wander in mm, then raise Watch / Alarm with on-screen evidence."}
         </p>
 
         <DetectorStrip detectors={c.detectors} />
@@ -54,6 +55,7 @@ export default async function ConveyorPage({
             initialWanderMm={wanderMm}
             initialStatus={mis?.status ?? c.status}
             offline={c.status === "offline"}
+            videoSrc={c.videoSrc}
           />
           <div>
             <div className="card">

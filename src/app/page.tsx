@@ -25,7 +25,10 @@ export default function Home() {
           oversize and splice. This is an SKF Australia internal preview.
         </p>
         <p style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-          <Link className="btn primary" href="/plant">
+          <Link className="btn primary" href="/conveyor/demo1">
+            Open Demo1
+          </Link>
+          <Link className="btn ghost" href="/plant">
             Enter plant
           </Link>
           <Link className="btn ghost" href="/models">

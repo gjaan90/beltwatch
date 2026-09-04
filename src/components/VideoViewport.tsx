@@ -25,8 +25,9 @@ export default function VideoViewport({
   initialWanderMm,
   initialStatus,
   offline = false,
-  videoSrc = "/samples/misalignment-demo.mp4",
+  videoSrc,
 }: Props) {
+  const resolvedVideo = videoSrc ?? "/samples/misalignment-demo.mp4";
   const [frame, setFrame] = useState<FrameInference | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<number[]>(
@@ -82,12 +83,17 @@ export default function VideoViewport({
   }, [poll, offline]);
 
   useEffect(() => {
+    setVideoOk(true);
+  }, [resolvedVideo]);
+
+  useEffect(() => {
     const v = videoRef.current;
-    if (!v) return;
+    if (!v || !videoOk) return;
+    v.load();
     v.play().catch(() => {
-      /* autoplay may be blocked until unmute — muted loop should work */
+      /* autoplay may be blocked — muted loop should work */
     });
-  }, [videoOk]);
+  }, [videoOk, resolvedVideo]);
 
   const maxAbs = Math.max(20, ...history.map((v) => Math.abs(v)));
 
@@ -98,7 +104,7 @@ export default function VideoViewport({
           <video
             ref={videoRef}
             className="vp-video"
-            src={videoSrc}
+            src={resolvedVideo}
             muted
             loop
             playsInline

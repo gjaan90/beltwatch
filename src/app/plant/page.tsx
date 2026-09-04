@@ -3,7 +3,7 @@ import AppShell from "@/components/AppShell";
 import { conveyors } from "@/lib/demo";
 
 export default function Plant() {
-  const sites = ["Iron Ridge", "Hunter Valley"];
+  const sites = ["Demo Plant", "Iron Ridge", "Hunter Valley"];
   return (
     <AppShell active="plant">
       <div className="page">
