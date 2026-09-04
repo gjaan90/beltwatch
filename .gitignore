@@ -11,3 +11,7 @@ ml/weights/**/*.pt
 tmp-razor/
 public/samples/*.mp4
 public/samples/*.webm
+ml/runs/**/frames/
+ml/runs/**/series.csv
+*.mkv
+*.webm
