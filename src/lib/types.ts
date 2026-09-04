@@ -37,6 +37,8 @@ export type Conveyor = {
   videoSrc?: string;
   /** Precomputed real edge timeline JSON (from extract_demo1_edges.py) */
   edgeTrackUrl?: string;
+  /** Precomputed YOLO detections JSON (from extract_demo1_yolo.py) */
+  yoloTrackUrl?: string;
   /** Camera-specific overlay geometry for this view */
   overlayCal?: OverlayCal;
 };

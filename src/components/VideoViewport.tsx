@@ -3,10 +3,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   sampleEdgeTrack,
+  sampleYoloTrack,
   statusFromWander,
   type EdgeTrack,
+  type YoloTrack,
 } from "@/lib/edgeTrack";
-import type { FrameInference, OverlayHint, Status } from "@/lib/types";
+import type { DetectorKind, FrameInference, OverlayHint, Status } from "@/lib/types";
 
 type Props = {
   conveyorId: string;
@@ -20,6 +22,8 @@ type Props = {
   videoSrc?: string;
   /** Precomputed real edge timeline for this clip (JSON in /public) */
   edgeTrackUrl?: string;
+  /** Precomputed YOLO detections from kickstart weights */
+  yoloTrackUrl?: string;
 };
 
 const HISTORY_LEN = 24;
@@ -34,6 +38,7 @@ export default function VideoViewport({
   offline = false,
   videoSrc,
   edgeTrackUrl,
+  yoloTrackUrl,
 }: Props) {
   const resolvedVideo = videoSrc ?? "/samples/misalignment-demo.mp4";
   const [frame, setFrame] = useState<FrameInference | null>(null);
@@ -43,19 +48,26 @@ export default function VideoViewport({
   );
   const [videoOk, setVideoOk] = useState(true);
   const [track, setTrack] = useState<EdgeTrack | null>(null);
+  const [yoloTrack, setYoloTrack] = useState<YoloTrack | null>(null);
   const [liveOverlay, setLiveOverlay] = useState<OverlayHint | null>(null);
   const [liveWander, setLiveWander] = useState(initialWanderMm);
   const [liveStatus, setLiveStatus] = useState<Status>(initialStatus);
-  const [detectMode, setDetectMode] = useState<"mock" | "video-edges">("mock");
+  const [detectMode, setDetectMode] = useState<"mock" | "video-edges" | "model">(
+    "mock"
+  );
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const usingTrack = Boolean(edgeTrackUrl && track);
+  const usingTrack = Boolean(
+    (edgeTrackUrl && track) || (yoloTrackUrl && yoloTrack)
+  );
 
   const overlay = liveOverlay ?? frame?.overlay ?? initialOverlay;
   const wanderMm = usingTrack ? liveWander : (frame?.wanderMm ?? initialWanderMm);
   const status = usingTrack ? liveStatus : (frame?.wanderStatus ?? initialStatus);
   const mode = usingTrack ? detectMode : (frame?.mode ?? "mock");
-  const fps = usingTrack ? Math.round(track?.fps ?? 0) : (frame?.fps ?? 0);
+  const fps = usingTrack
+    ? Math.round(yoloTrack?.fps ?? track?.fps ?? 0)
+    : (frame?.fps ?? 0);
   const latencyMs = usingTrack ? 0 : (frame?.latencyMs ?? 0);
   const showAlert = !offline && (status === "watch" || status === "alarm");
 
@@ -91,55 +103,98 @@ export default function VideoViewport({
     };
   }, [showAlert, driftDir, overlay, centreLine, lineTop, lineBottom]);
 
-  // Load real edge track for Demo1-style clips
+  // Load edge + YOLO tracks for Demo1
   useEffect(() => {
-    if (!edgeTrackUrl) {
-      setTrack(null);
-      setDetectMode("mock");
-      return;
-    }
     let cancelled = false;
-    fetch(edgeTrackUrl)
-      .then((r) => {
-        if (!r.ok) throw new Error(`edge track HTTP ${r.status}`);
-        return r.json();
-      })
-      .then((data: EdgeTrack) => {
+    const jobs: Promise<void>[] = [];
+
+    if (edgeTrackUrl) {
+      jobs.push(
+        fetch(edgeTrackUrl)
+          .then((r) => {
+            if (!r.ok) throw new Error(`edge track HTTP ${r.status}`);
+            return r.json();
+          })
+          .then((data: EdgeTrack) => {
+            if (cancelled) return;
+            setTrack(data);
+          })
+      );
+    } else {
+      setTrack(null);
+    }
+
+    if (yoloTrackUrl) {
+      jobs.push(
+        fetch(yoloTrackUrl)
+          .then((r) => {
+            if (!r.ok) throw new Error(`yolo track HTTP ${r.status}`);
+            return r.json();
+          })
+          .then((data: YoloTrack) => {
+            if (cancelled) return;
+            setYoloTrack(data);
+            setDetectMode("model");
+          })
+      );
+    } else {
+      setYoloTrack(null);
+    }
+
+    Promise.all(jobs)
+      .then(() => {
         if (cancelled) return;
-        setTrack(data);
-        setDetectMode("video-edges");
         setError(null);
+        if (!yoloTrackUrl && edgeTrackUrl) setDetectMode("video-edges");
+        if (!yoloTrackUrl && !edgeTrackUrl) setDetectMode("mock");
       })
       .catch((e) => {
         if (cancelled) return;
-        setTrack(null);
-        setDetectMode("mock");
-        setError(e instanceof Error ? e.message : "edge track failed");
+        setError(e instanceof Error ? e.message : "track load failed");
       });
+
     return () => {
       cancelled = true;
     };
-  }, [edgeTrackUrl]);
+  }, [edgeTrackUrl, yoloTrackUrl]);
 
   const applyTrackSample = useCallback(() => {
     const v = videoRef.current;
-    if (!v || !track) return;
-    const sample = sampleEdgeTrack(track, v.currentTime);
-    if (!sample) return;
-    const st = statusFromWander(sample.wanderMm);
-    setLiveWander(sample.wanderMm);
+    if (!v) return;
+
+    const yolo = yoloTrack ? sampleYoloTrack(yoloTrack, v.currentTime) : null;
+    const edge = track ? sampleEdgeTrack(track, v.currentTime) : null;
+
+    const edgeL = yolo?.edgeL ?? edge?.edgeL;
+    const edgeR = yolo?.edgeR ?? edge?.edgeR;
+    const centre = yolo?.centre ?? edge?.centre ?? track?.centre ?? 50;
+    const wander = yolo?.wanderMm ?? edge?.wanderMm;
+    if (edgeL == null || edgeR == null || wander == null) return;
+
+    const st = statusFromWander(wander);
+    setLiveWander(wander);
     setLiveStatus(st);
     setLiveOverlay({
-      edgeL: sample.edgeL,
-      edgeR: sample.edgeR,
+      edgeL,
+      edgeR,
       idlerL: 6,
       idlerR: 93,
-      centre: sample.centre ?? track.centre ?? 50,
+      centre,
       lineTop: 8,
       lineBottom: 10,
+      boxes: (yolo?.boxes ?? []).map((b) => ({
+        x: b.x,
+        y: b.y,
+        w: b.w,
+        h: b.h,
+        label: b.label,
+        kind: (b.kind as DetectorKind) || "misalignment",
+      })),
     });
-    setHistory((h) => [...h.slice(1), sample.wanderMm]);
-  }, [track]);
+    if (yoloTrack) setDetectMode("model");
+    else setDetectMode("video-edges");
+    setHistory((h) => [...h.slice(1), wander]);
+  }, [track, yoloTrack]);
 
   useEffect(() => {
     if (!usingTrack) return;
@@ -270,9 +325,11 @@ export default function VideoViewport({
       <div className="hud">
         <div>
           {camera} ·{" "}
-          {usingTrack
-            ? "real edge track synced to video"
-            : "edge vs centreline · mock"}
+          {detectMode === "model"
+            ? "YOLO kickstart weights synced to video"
+            : detectMode === "video-edges"
+              ? "real edge track synced to video"
+              : "edge vs centreline · mock"}
           {error ? ` · err: ${error}` : ""}
         </div>
         <div className="meta" style={{ margin: 0 }}>

@@ -61,11 +61,14 @@ export function inferFrame(
     overlay.edgeR += j;
   }
 
+  const hasWeights =
+    conveyorId === "demo1" && Boolean(c.yoloTrackUrl || c.edgeTrackUrl);
+
   return {
     conveyorId,
     camera,
     ts: new Date().toISOString(),
-    mode: "mock",
+    mode: hasWeights ? "model" : "mock",
     wanderMm,
     wanderStatus,
     detectors,

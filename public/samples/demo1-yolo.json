@@ -1,0 +1,2711 @@
+{
+  "video": "demo1-misalignment.mp4",
+  "weights": "ml/weights/misalignment/best.pt",
+  "fps": 30.0,
+  "width": 3840,
+  "height": 2160,
+  "step": 2,
+  "mode": "model",
+  "frames": [
+    {
+      "t": 0.0,
+      "frame": 0,
+      "boxes": [
+        {
+          "x": 30.86,
+          "y": 21.15,
+          "w": 61.74,
+          "h": 65.75,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.838,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 17.58,
+      "edgeR": 88.0,
+      "centre": 50.0,
+      "wanderMm": 7.3
+    },
+    {
+      "t": 0.067,
+      "frame": 2,
+      "boxes": [
+        {
+          "x": 30.87,
+          "y": 21.17,
+          "w": 61.74,
+          "h": 65.75,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.837,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.133,
+      "frame": 4,
+      "boxes": [
+        {
+          "x": 30.88,
+          "y": 21.17,
+          "w": 61.72,
+          "h": 65.74,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.837,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.2,
+      "frame": 6,
+      "boxes": [
+        {
+          "x": 30.88,
+          "y": 21.17,
+          "w": 61.73,
+          "h": 65.74,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.836,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.267,
+      "frame": 8,
+      "boxes": [
+        {
+          "x": 30.88,
+          "y": 21.19,
+          "w": 61.73,
+          "h": 65.72,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.837,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.333,
+      "frame": 10,
+      "boxes": [
+        {
+          "x": 30.88,
+          "y": 21.2,
+          "w": 61.73,
+          "h": 65.71,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.836,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.4,
+      "frame": 12,
+      "boxes": [
+        {
+          "x": 30.87,
+          "y": 21.19,
+          "w": 61.74,
+          "h": 65.71,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.836,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.467,
+      "frame": 14,
+      "boxes": [
+        {
+          "x": 30.87,
+          "y": 21.2,
+          "w": 61.74,
+          "h": 65.71,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.836,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.533,
+      "frame": 16,
+      "boxes": [
+        {
+          "x": 30.82,
+          "y": 21.29,
+          "w": 61.76,
+          "h": 65.68,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.833,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.6,
+      "frame": 18,
+      "boxes": [
+        {
+          "x": 30.82,
+          "y": 21.29,
+          "w": 61.76,
+          "h": 65.66,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.833,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.667,
+      "frame": 20,
+      "boxes": [
+        {
+          "x": 30.83,
+          "y": 21.33,
+          "w": 61.75,
+          "h": 65.63,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.832,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.733,
+      "frame": 22,
+      "boxes": [
+        {
+          "x": 30.83,
+          "y": 21.34,
+          "w": 61.75,
+          "h": 65.63,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.832,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.8,
+      "frame": 24,
+      "boxes": [
+        {
+          "x": 30.83,
+          "y": 21.35,
+          "w": 61.74,
+          "h": 65.61,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.833,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.867,
+      "frame": 26,
+      "boxes": [
+        {
+          "x": 30.82,
+          "y": 21.34,
+          "w": 61.74,
+          "h": 65.62,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.833,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.933,
+      "frame": 28,
+      "boxes": [
+        {
+          "x": 30.82,
+          "y": 21.36,
+          "w": 61.74,
+          "h": 65.6,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.833,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.0,
+      "frame": 30,
+      "boxes": [
+        {
+          "x": 30.63,
+          "y": 20.2,
+          "w": 61.79,
+          "h": 66.9,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.827,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.31,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.067,
+      "frame": 32,
+      "boxes": [
+        {
+          "x": 30.68,
+          "y": 20.35,
+          "w": 61.67,
+          "h": 66.76,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.133,
+      "frame": 34,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.34,
+          "w": 61.7,
+          "h": 66.77,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.2,
+      "frame": 36,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.31,
+          "w": 61.69,
+          "h": 66.81,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.824,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.267,
+      "frame": 38,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.33,
+          "w": 61.69,
+          "h": 66.79,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.333,
+      "frame": 40,
+      "boxes": [
+        {
+          "x": 30.68,
+          "y": 20.32,
+          "w": 61.68,
+          "h": 66.81,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.4,
+      "frame": 42,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.32,
+          "w": 61.69,
+          "h": 66.82,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.467,
+      "frame": 44,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.32,
+          "w": 61.68,
+          "h": 66.81,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.533,
+      "frame": 46,
+      "boxes": [
+        {
+          "x": 30.67,
+          "y": 20.33,
+          "w": 61.68,
+          "h": 66.81,
+          "label": "belt 0.82",
+          "kind": "misalignment",
+          "conf": 0.825,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.6,
+      "frame": 48,
+      "boxes": [
+        {
+          "x": 30.69,
+          "y": 20.2,
+          "w": 61.68,
+          "h": 66.87,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.826,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.667,
+      "frame": 50,
+      "boxes": [
+        {
+          "x": 30.69,
+          "y": 20.19,
+          "w": 61.67,
+          "h": 66.9,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.827,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.733,
+      "frame": 52,
+      "boxes": [
+        {
+          "x": 30.7,
+          "y": 20.21,
+          "w": 61.68,
+          "h": 66.89,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.827,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.8,
+      "frame": 54,
+      "boxes": [
+        {
+          "x": 30.69,
+          "y": 20.21,
+          "w": 61.69,
+          "h": 66.88,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.827,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.867,
+      "frame": 56,
+      "boxes": [
+        {
+          "x": 30.69,
+          "y": 20.21,
+          "w": 61.68,
+          "h": 66.89,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.827,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.933,
+      "frame": 58,
+      "boxes": [
+        {
+          "x": 30.69,
+          "y": 20.21,
+          "w": 61.68,
+          "h": 66.88,
+          "label": "belt 0.83",
+          "kind": "misalignment",
+          "conf": 0.826,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.0,
+      "frame": 60,
+      "boxes": [
+        {
+          "x": 31.03,
+          "y": 22.77,
+          "w": 61.16,
+          "h": 63.98,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.851,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.067,
+      "frame": 62,
+      "boxes": [
+        {
+          "x": 31.03,
+          "y": 22.79,
+          "w": 61.16,
+          "h": 63.97,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.852,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.133,
+      "frame": 64,
+      "boxes": [
+        {
+          "x": 30.99,
+          "y": 22.76,
+          "w": 61.26,
+          "h": 64.1,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.2,
+      "frame": 66,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.72,
+          "w": 61.24,
+          "h": 64.12,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.267,
+      "frame": 68,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.72,
+          "w": 61.25,
+          "h": 64.13,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.333,
+      "frame": 70,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.74,
+          "w": 61.25,
+          "h": 64.11,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.4,
+      "frame": 72,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.76,
+          "w": 61.26,
+          "h": 64.1,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.852,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.467,
+      "frame": 74,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.76,
+          "w": 61.26,
+          "h": 64.11,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.533,
+      "frame": 76,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.76,
+          "w": 61.26,
+          "h": 64.1,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.6,
+      "frame": 78,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.76,
+          "w": 61.26,
+          "h": 64.1,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.853,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.667,
+      "frame": 80,
+      "boxes": [
+        {
+          "x": 31.0,
+          "y": 22.61,
+          "w": 61.27,
+          "h": 64.29,
+          "label": "belt 0.86",
+          "kind": "misalignment",
+          "conf": 0.856,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.733,
+      "frame": 82,
+      "boxes": [
+        {
+          "x": 31.01,
+          "y": 22.6,
+          "w": 61.25,
+          "h": 64.26,
+          "label": "belt 0.86",
+          "kind": "misalignment",
+          "conf": 0.855,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.8,
+      "frame": 84,
+      "boxes": [
+        {
+          "x": 31.01,
+          "y": 22.6,
+          "w": 61.26,
+          "h": 64.29,
+          "label": "belt 0.86",
+          "kind": "misalignment",
+          "conf": 0.855,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.867,
+      "frame": 86,
+      "boxes": [
+        {
+          "x": 31.01,
+          "y": 22.61,
+          "w": 61.26,
+          "h": 64.27,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.855,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.933,
+      "frame": 88,
+      "boxes": [
+        {
+          "x": 31.01,
+          "y": 22.61,
+          "w": 61.26,
+          "h": 64.27,
+          "label": "belt 0.85",
+          "kind": "misalignment",
+          "conf": 0.854,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.0,
+      "frame": 90,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.6,
+          "w": 61.58,
+          "h": 64.97,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.839,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.067,
+      "frame": 92,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.62,
+          "w": 61.6,
+          "h": 64.96,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.839,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.133,
+      "frame": 94,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.61,
+          "w": 61.58,
+          "h": 64.94,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.838,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.2,
+      "frame": 96,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.85,
+          "w": 61.62,
+          "h": 64.77,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.267,
+      "frame": 98,
+      "boxes": [
+        {
+          "x": 30.97,
+          "y": 21.88,
+          "w": 61.63,
+          "h": 64.72,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.333,
+      "frame": 100,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.92,
+          "w": 61.63,
+          "h": 64.72,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.84,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.4,
+      "frame": 102,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.87,
+          "w": 61.62,
+          "h": 64.74,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.467,
+      "frame": 104,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.88,
+          "w": 61.62,
+          "h": 64.74,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.533,
+      "frame": 106,
+      "boxes": [
+        {
+          "x": 30.99,
+          "y": 21.9,
+          "w": 61.61,
+          "h": 64.72,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.6,
+      "frame": 108,
+      "boxes": [
+        {
+          "x": 30.98,
+          "y": 21.9,
+          "w": 61.62,
+          "h": 64.71,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.84,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.667,
+      "frame": 110,
+      "boxes": [
+        {
+          "x": 30.99,
+          "y": 21.9,
+          "w": 61.62,
+          "h": 64.7,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.84,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.733,
+      "frame": 112,
+      "boxes": [
+        {
+          "x": 30.93,
+          "y": 21.78,
+          "w": 61.66,
+          "h": 64.88,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.8,
+      "frame": 114,
+      "boxes": [
+        {
+          "x": 30.93,
+          "y": 21.75,
+          "w": 61.66,
+          "h": 64.9,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.867,
+      "frame": 116,
+      "boxes": [
+        {
+          "x": 30.93,
+          "y": 21.74,
+          "w": 61.67,
+          "h": 64.92,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.841,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.933,
+      "frame": 118,
+      "boxes": [
+        {
+          "x": 30.93,
+          "y": 21.75,
+          "w": 61.66,
+          "h": 64.91,
+          "label": "belt 0.84",
+          "kind": "misalignment",
+          "conf": 0.84,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 24.55,
+      "edgeR": 95.77,
+      "centre": 50.0,
+      "wanderMm": 11.5
+    },
+    {
+      "t": 4.0,
+      "frame": 120,
+      "boxes": [
+        {
+          "x": 3.98,
+          "y": 25.48,
+          "w": 95.18,
+          "h": 60.82,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 15.0,
+      "edgeR": 97.64,
+      "centre": 50.0,
+      "wanderMm": 5.7
+    },
+    {
+      "t": 4.067,
+      "frame": 122,
+      "boxes": [
+        {
+          "x": 3.99,
+          "y": 25.46,
+          "w": 95.18,
+          "h": 60.82,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.45,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 4.133,
+      "frame": 124,
+      "boxes": [
+        {
+          "x": 4.0,
+          "y": 25.47,
+          "w": 95.18,
+          "h": 60.81,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.2,
+      "frame": 126,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.46,
+          "w": 95.17,
+          "h": 60.81,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.979,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.267,
+      "frame": 128,
+      "boxes": [
+        {
+          "x": 3.98,
+          "y": 25.4,
+          "w": 95.26,
+          "h": 60.93,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.333,
+      "frame": 130,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.41,
+          "w": 95.23,
+          "h": 60.92,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.4,
+      "frame": 132,
+      "boxes": [
+        {
+          "x": 4.02,
+          "y": 25.41,
+          "w": 95.23,
+          "h": 60.91,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.467,
+      "frame": 134,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.42,
+          "w": 95.23,
+          "h": 60.91,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.533,
+      "frame": 136,
+      "boxes": [
+        {
+          "x": 3.97,
+          "y": 25.42,
+          "w": 95.27,
+          "h": 60.92,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.6,
+      "frame": 138,
+      "boxes": [
+        {
+          "x": 3.96,
+          "y": 25.41,
+          "w": 95.28,
+          "h": 60.92,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.667,
+      "frame": 140,
+      "boxes": [
+        {
+          "x": 3.95,
+          "y": 25.4,
+          "w": 95.29,
+          "h": 60.93,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.733,
+      "frame": 142,
+      "boxes": [
+        {
+          "x": 3.95,
+          "y": 25.41,
+          "w": 95.29,
+          "h": 60.93,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.8,
+      "frame": 144,
+      "boxes": [
+        {
+          "x": 3.97,
+          "y": 25.47,
+          "w": 95.18,
+          "h": 60.86,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.867,
+      "frame": 146,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.46,
+          "w": 95.16,
+          "h": 60.88,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.933,
+      "frame": 148,
+      "boxes": [
+        {
+          "x": 4.03,
+          "y": 25.45,
+          "w": 95.14,
+          "h": 60.89,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.0,
+      "frame": 150,
+      "boxes": [
+        {
+          "x": 3.0,
+          "y": 24.28,
+          "w": 96.67,
+          "h": 61.98,
+          "label": "belt 0.96",
+          "kind": "misalignment",
+          "conf": 0.964,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.067,
+      "frame": 152,
+      "boxes": [
+        {
+          "x": 3.01,
+          "y": 24.3,
+          "w": 96.66,
+          "h": 61.96,
+          "label": "belt 0.96",
+          "kind": "misalignment",
+          "conf": 0.964,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.133,
+      "frame": 154,
+      "boxes": [
+        {
+          "x": 3.04,
+          "y": 24.3,
+          "w": 96.64,
+          "h": 61.97,
+          "label": "belt 0.96",
+          "kind": "misalignment",
+          "conf": 0.964,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.2,
+      "frame": 156,
+      "boxes": [
+        {
+          "x": 3.0,
+          "y": 24.31,
+          "w": 96.67,
+          "h": 61.97,
+          "label": "belt 0.96",
+          "kind": "misalignment",
+          "conf": 0.964,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.267,
+      "frame": 158,
+      "boxes": [
+        {
+          "x": 3.01,
+          "y": 24.31,
+          "w": 96.67,
+          "h": 61.96,
+          "label": "belt 0.96",
+          "kind": "misalignment",
+          "conf": 0.965,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.333,
+      "frame": 160,
+      "boxes": [
+        {
+          "x": 2.9,
+          "y": 24.34,
+          "w": 96.75,
+          "h": 61.92,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.4,
+      "frame": 162,
+      "boxes": [
+        {
+          "x": 2.89,
+          "y": 24.38,
+          "w": 96.76,
+          "h": 61.87,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.467,
+      "frame": 164,
+      "boxes": [
+        {
+          "x": 2.9,
+          "y": 24.36,
+          "w": 96.74,
+          "h": 61.89,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.533,
+      "frame": 166,
+      "boxes": [
+        {
+          "x": 2.94,
+          "y": 24.35,
+          "w": 96.71,
+          "h": 61.91,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.6,
+      "frame": 168,
+      "boxes": [
+        {
+          "x": 2.95,
+          "y": 24.34,
+          "w": 96.7,
+          "h": 61.95,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.667,
+      "frame": 170,
+      "boxes": [
+        {
+          "x": 2.95,
+          "y": 24.33,
+          "w": 96.7,
+          "h": 61.93,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.733,
+      "frame": 172,
+      "boxes": [
+        {
+          "x": 2.95,
+          "y": 24.34,
+          "w": 96.69,
+          "h": 61.93,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.8,
+      "frame": 174,
+      "boxes": [
+        {
+          "x": 2.96,
+          "y": 24.34,
+          "w": 96.69,
+          "h": 61.93,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.967,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.867,
+      "frame": 176,
+      "boxes": [
+        {
+          "x": 3.02,
+          "y": 24.22,
+          "w": 96.62,
+          "h": 62.06,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.966,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.933,
+      "frame": 178,
+      "boxes": [
+        {
+          "x": 3.03,
+          "y": 24.23,
+          "w": 96.6,
+          "h": 62.05,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.966,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.45,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.0,
+      "frame": 180,
+      "boxes": [
+        {
+          "x": 4.07,
+          "y": 25.7,
+          "w": 95.33,
+          "h": 60.47,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.067,
+      "frame": 182,
+      "boxes": [
+        {
+          "x": 4.11,
+          "y": 25.7,
+          "w": 95.29,
+          "h": 60.47,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.133,
+      "frame": 184,
+      "boxes": [
+        {
+          "x": 4.14,
+          "y": 25.68,
+          "w": 95.26,
+          "h": 60.5,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.2,
+      "frame": 186,
+      "boxes": [
+        {
+          "x": 4.11,
+          "y": 25.69,
+          "w": 95.3,
+          "h": 60.5,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.267,
+      "frame": 188,
+      "boxes": [
+        {
+          "x": 4.14,
+          "y": 25.69,
+          "w": 95.27,
+          "h": 60.5,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.333,
+      "frame": 190,
+      "boxes": [
+        {
+          "x": 4.13,
+          "y": 25.69,
+          "w": 95.27,
+          "h": 60.5,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.4,
+      "frame": 192,
+      "boxes": [
+        {
+          "x": 4.18,
+          "y": 25.8,
+          "w": 95.23,
+          "h": 60.41,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.467,
+      "frame": 194,
+      "boxes": [
+        {
+          "x": 4.15,
+          "y": 25.79,
+          "w": 95.26,
+          "h": 60.41,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.533,
+      "frame": 196,
+      "boxes": [
+        {
+          "x": 4.19,
+          "y": 25.79,
+          "w": 95.22,
+          "h": 60.41,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.6,
+      "frame": 198,
+      "boxes": [
+        {
+          "x": 4.13,
+          "y": 25.83,
+          "w": 95.29,
+          "h": 60.36,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.667,
+      "frame": 200,
+      "boxes": [
+        {
+          "x": 4.15,
+          "y": 25.87,
+          "w": 95.27,
+          "h": 60.34,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.733,
+      "frame": 202,
+      "boxes": [
+        {
+          "x": 4.15,
+          "y": 25.85,
+          "w": 95.26,
+          "h": 60.36,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.8,
+      "frame": 204,
+      "boxes": [
+        {
+          "x": 4.16,
+          "y": 25.86,
+          "w": 95.25,
+          "h": 60.36,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.867,
+      "frame": 206,
+      "boxes": [
+        {
+          "x": 4.16,
+          "y": 25.85,
+          "w": 95.26,
+          "h": 60.37,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.933,
+      "frame": 208,
+      "boxes": [
+        {
+          "x": 4.33,
+          "y": 25.81,
+          "w": 95.07,
+          "h": 60.38,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.976,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.0,
+      "frame": 210,
+      "boxes": [
+        {
+          "x": 3.09,
+          "y": 26.05,
+          "w": 96.42,
+          "h": 59.99,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.067,
+      "frame": 212,
+      "boxes": [
+        {
+          "x": 3.06,
+          "y": 26.08,
+          "w": 96.45,
+          "h": 59.98,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.133,
+      "frame": 214,
+      "boxes": [
+        {
+          "x": 3.09,
+          "y": 26.16,
+          "w": 96.42,
+          "h": 59.92,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.2,
+      "frame": 216,
+      "boxes": [
+        {
+          "x": 3.11,
+          "y": 26.15,
+          "w": 96.39,
+          "h": 59.93,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.267,
+      "frame": 218,
+      "boxes": [
+        {
+          "x": 3.12,
+          "y": 26.12,
+          "w": 96.39,
+          "h": 59.94,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.333,
+      "frame": 220,
+      "boxes": [
+        {
+          "x": 3.11,
+          "y": 26.09,
+          "w": 96.4,
+          "h": 59.99,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.4,
+      "frame": 222,
+      "boxes": [
+        {
+          "x": 3.12,
+          "y": 26.09,
+          "w": 96.4,
+          "h": 59.99,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.975,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.467,
+      "frame": 224,
+      "boxes": [
+        {
+          "x": 3.01,
+          "y": 26.07,
+          "w": 96.49,
+          "h": 60.0,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.533,
+      "frame": 226,
+      "boxes": [
+        {
+          "x": 3.01,
+          "y": 26.06,
+          "w": 96.49,
+          "h": 60.04,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.6,
+      "frame": 228,
+      "boxes": [
+        {
+          "x": 3.0,
+          "y": 26.06,
+          "w": 96.49,
+          "h": 60.05,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.667,
+      "frame": 230,
+      "boxes": [
+        {
+          "x": 2.97,
+          "y": 26.07,
+          "w": 96.52,
+          "h": 60.03,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.733,
+      "frame": 232,
+      "boxes": [
+        {
+          "x": 2.96,
+          "y": 26.05,
+          "w": 96.53,
+          "h": 60.04,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.8,
+      "frame": 234,
+      "boxes": [
+        {
+          "x": 2.96,
+          "y": 26.05,
+          "w": 96.53,
+          "h": 60.05,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.867,
+      "frame": 236,
+      "boxes": [
+        {
+          "x": 2.96,
+          "y": 26.05,
+          "w": 96.54,
+          "h": 60.05,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.933,
+      "frame": 238,
+      "boxes": [
+        {
+          "x": 2.96,
+          "y": 26.04,
+          "w": 96.54,
+          "h": 60.05,
+          "label": "belt 0.97",
+          "kind": "misalignment",
+          "conf": 0.974,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.0,
+      "frame": 240,
+      "boxes": [
+        {
+          "x": 3.97,
+          "y": 25.47,
+          "w": 95.38,
+          "h": 60.73,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.5,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.067,
+      "frame": 242,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.44,
+          "w": 95.34,
+          "h": 60.76,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.133,
+      "frame": 244,
+      "boxes": [
+        {
+          "x": 4.03,
+          "y": 25.44,
+          "w": 95.32,
+          "h": 60.75,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.2,
+      "frame": 246,
+      "boxes": [
+        {
+          "x": 4.01,
+          "y": 25.46,
+          "w": 95.34,
+          "h": 60.73,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.979,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.267,
+      "frame": 248,
+      "boxes": [
+        {
+          "x": 4.03,
+          "y": 25.49,
+          "w": 95.31,
+          "h": 60.71,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.979,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.333,
+      "frame": 250,
+      "boxes": [
+        {
+          "x": 4.02,
+          "y": 25.48,
+          "w": 95.33,
+          "h": 60.71,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.979,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.4,
+      "frame": 252,
+      "boxes": [
+        {
+          "x": 4.02,
+          "y": 25.48,
+          "w": 95.33,
+          "h": 60.7,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.467,
+      "frame": 254,
+      "boxes": [
+        {
+          "x": 4.02,
+          "y": 25.48,
+          "w": 95.33,
+          "h": 60.7,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.51,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.533,
+      "frame": 256,
+      "boxes": [
+        {
+          "x": 3.91,
+          "y": 25.36,
+          "w": 95.45,
+          "h": 60.79,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.5,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.6,
+      "frame": 258,
+      "boxes": [
+        {
+          "x": 3.9,
+          "y": 25.37,
+          "w": 95.46,
+          "h": 60.78,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.667,
+      "frame": 260,
+      "boxes": [
+        {
+          "x": 3.95,
+          "y": 25.38,
+          "w": 95.41,
+          "h": 60.78,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.979,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.733,
+      "frame": 262,
+      "boxes": [
+        {
+          "x": 3.93,
+          "y": 25.4,
+          "w": 95.43,
+          "h": 60.76,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.8,
+      "frame": 264,
+      "boxes": [
+        {
+          "x": 3.94,
+          "y": 25.41,
+          "w": 95.42,
+          "h": 60.73,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.867,
+      "frame": 266,
+      "boxes": [
+        {
+          "x": 3.94,
+          "y": 25.42,
+          "w": 95.42,
+          "h": 60.72,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.933,
+      "frame": 268,
+      "boxes": [
+        {
+          "x": 3.92,
+          "y": 25.42,
+          "w": 95.44,
+          "h": 60.73,
+          "label": "belt 0.98",
+          "kind": "misalignment",
+          "conf": 0.98,
+          "cls": "belt"
+        }
+      ],
+      "edgeL": 4.39,
+      "edgeR": 88.0,
+      "centre": 50.0,
+      "wanderMm": -0.6
+    }
+  ]
+}

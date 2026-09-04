@@ -115,6 +115,7 @@ export const conveyors: Conveyor[] = [
     material: "iron_ore",
     videoSrc: "/samples/demo1-misalignment.mp4",
     edgeTrackUrl: "/samples/demo1-edges.json",
+    yoloTrackUrl: "/samples/demo1-yolo.json",
     overlayCal: demo1OverlayCal,
     detectors: detectorsFor(
       14,

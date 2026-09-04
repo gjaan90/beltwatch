@@ -19,12 +19,42 @@ export type EdgeTrack = {
   frames: EdgeFrame[];
 };
 
+export type YoloBox = {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  label: string;
+  kind: string;
+  conf?: number;
+  cls?: string;
+};
+
+export type YoloFrame = {
+  t: number;
+  frame: number;
+  boxes: YoloBox[];
+  edgeL?: number | null;
+  edgeR?: number | null;
+  centre?: number;
+  wanderMm?: number;
+};
+
+export type YoloTrack = {
+  video: string;
+  weights: string;
+  fps: number;
+  width: number;
+  height: number;
+  mode: string;
+  frames: YoloFrame[];
+};
+
 /** Nearest timeline sample for video currentTime (seconds). */
-export function sampleEdgeTrack(
-  track: EdgeTrack,
+export function sampleTrackFrame<T extends { t: number }>(
+  frames: T[],
   timeSec: number
-): EdgeFrame | null {
-  const frames = track.frames;
+): T | null {
   if (!frames.length) return null;
   let best = frames[0];
   let bestDt = Math.abs(best.t - timeSec);
@@ -38,6 +68,20 @@ export function sampleEdgeTrack(
     }
   }
   return best;
+}
+
+export function sampleEdgeTrack(
+  track: EdgeTrack,
+  timeSec: number
+): EdgeFrame | null {
+  return sampleTrackFrame(track.frames, timeSec);
+}
+
+export function sampleYoloTrack(
+  track: YoloTrack,
+  timeSec: number
+): YoloFrame | null {
+  return sampleTrackFrame(track.frames, timeSec);
 }
 
 export function statusFromWander(mm: number): "ok" | "watch" | "alarm" {
