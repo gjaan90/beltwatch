@@ -2,6 +2,25 @@ export type Status = "ok" | "watch" | "alarm" | "offline";
 
 export type DetectorKind = "misalignment" | "oversize" | "splice";
 
+/** Per-camera overlay calibration in % of frame width (from footage). */
+export type OverlayCal = {
+  /** Belt left edge when aligned */
+  alignedEdgeL: number;
+  /** Belt right edge when aligned */
+  alignedEdgeR: number;
+  /** Fixed structure / idler centreline */
+  centre: number;
+  /**
+   * Optional edge positions matching a clearly misaligned moment in the clip.
+   * Mock wander interpolates aligned → drift so overlays stay on the belt.
+   */
+  driftEdgeL?: number;
+  driftEdgeR?: number;
+  /** Vertical line span as % of frame height */
+  lineTop?: number;
+  lineBottom?: number;
+};
+
 export type Conveyor = {
   id: string;
   name: string;
@@ -16,6 +35,8 @@ export type Conveyor = {
   detectors: DetectorSnapshot[];
   /** Optional demo / live camera clip served from /public */
   videoSrc?: string;
+  /** Camera-specific overlay geometry for this view */
+  overlayCal?: OverlayCal;
 };
 
 export type DetectorSnapshot = {
@@ -50,9 +71,13 @@ export type OverlayHint = {
   edgeL: number;
   /** Belt right edge as % of frame width */
   edgeR: number;
-  /** Idler reference left / right */
+  /** Idler / aligned envelope left / right */
   idlerL: number;
   idlerR: number;
+  /** Fixed structure centreline % (defaults to mid of idlerL/idlerR) */
+  centre?: number;
+  lineTop?: number;
+  lineBottom?: number;
   /** Optional detection boxes */
   boxes?: Array<{
     x: number;

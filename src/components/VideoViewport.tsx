@@ -44,19 +44,40 @@ export default function VideoViewport({
   const latencyMs = frame?.latencyMs ?? 0;
   const showAlert = !offline && (status === "watch" || status === "alarm");
 
-  const idlerCentre = (overlay.idlerL + overlay.idlerR) / 2;
+  const centreLine =
+    overlay.centre ?? (overlay.idlerL + overlay.idlerR) / 2;
   const beltCentre = (overlay.edgeL + overlay.edgeR) / 2;
-  const driftDir = beltCentre >= idlerCentre ? "right" : "left";
+  const driftDir = beltCentre >= centreLine ? "right" : "left";
+  const lineTop = overlay.lineTop ?? 8;
+  const lineBottom = overlay.lineBottom ?? 10;
+  const lineStyle = {
+    top: `${lineTop}%`,
+    bottom: `${lineBottom}%`,
+  } as const;
 
-  /** Yellow callout between drifted belt edge and the matching idler reference */
+  /** Yellow callout: gap between centreline and the side the belt drifted from */
   const misBox = useMemo(() => {
     if (!showAlert) return null;
-    const edge = driftDir === "right" ? overlay.edgeR : overlay.edgeL;
-    const idler = driftDir === "right" ? overlay.idlerR : overlay.idlerL;
-    const left = Math.min(edge, idler) - 1;
-    const width = Math.max(4, Math.abs(edge - idler) + 2);
-    return { left, width, top: 22, height: 56 };
-  }, [showAlert, driftDir, overlay]);
+    // Belt drifted right → highlight left gap between aligned left and current left edge
+    if (driftDir === "right") {
+      const left = Math.min(overlay.idlerL, overlay.edgeL);
+      const right = Math.max(centreLine, overlay.edgeL);
+      return {
+        left,
+        width: Math.max(6, right - left),
+        top: lineTop + 10,
+        height: Math.max(40, 100 - lineTop - lineBottom - 20),
+      };
+    }
+    const left = Math.min(centreLine, overlay.edgeR);
+    const right = Math.max(overlay.idlerR, overlay.edgeR);
+    return {
+      left,
+      width: Math.max(6, right - left),
+      top: lineTop + 10,
+      height: Math.max(40, 100 - lineTop - lineBottom - 20),
+    };
+  }, [showAlert, driftDir, overlay, centreLine, lineTop, lineBottom]);
 
   const poll = useCallback(async () => {
     if (offline) return;
@@ -118,31 +139,21 @@ export default function VideoViewport({
           </>
         )}
 
-        {/* Structure / idler centreline reference (magenta dashed) — Razor principle */}
+        {/* Structure / idler centreline reference (magenta dashed) */}
         <div
           className="centre-ref"
-          style={{ left: `${idlerCentre}%` }}
+          style={{ left: `${centreLine}%`, ...lineStyle }}
           title="Idler / structure centreline"
         />
 
-        {/* Measured belt outer edges (teal) */}
+        {/* Measured belt outer edges (teal) — calibrated to footage when overlayCal set */}
         <div
           className="edge-track edge-l"
-          style={{ left: `${overlay.edgeL}%` }}
+          style={{ left: `${overlay.edgeL}%`, ...lineStyle }}
         />
         <div
           className="edge-track edge-r"
-          style={{ left: `${overlay.edgeR}%` }}
-        />
-
-        {/* Idler bay side references (subtle) */}
-        <div
-          className="idler-tick"
-          style={{ left: `${overlay.idlerL}%` }}
-        />
-        <div
-          className="idler-tick"
-          style={{ left: `${overlay.idlerR}%` }}
+          style={{ left: `${overlay.edgeR}%`, ...lineStyle }}
         />
 
         {misBox ? (

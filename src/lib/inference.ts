@@ -5,6 +5,9 @@ import type { FrameInference, Status } from "./types";
  * Mock / stub inference for BeltSight.
  * When MODE=model and a weights path exists, swap this for real YOLO + geometry.
  * Misalignment path: segment belt/idlers → edge geometry → wander mm.
+ *
+ * Overlay positions use per-conveyor overlayCal when present so demo footage
+ * keeps edges on the real belt instead of a generic centred box.
  */
 export function inferFrame(
   conveyorId: string,
@@ -17,7 +20,9 @@ export function inferFrame(
   const mis = c.detectors.find((d) => d.kind === "misalignment");
   let wanderMm = Number.parseInt(mis?.value ?? "0", 10) || 0;
   if (jitter && c.status !== "offline") {
-    wanderMm += Math.round((Math.sin(Date.now() / 800) * 1.2 + Math.random() - 0.5) * 10) / 10;
+    wanderMm +=
+      Math.round((Math.sin(Date.now() / 800) * 1.2 + Math.random() - 0.5) * 10) /
+      10;
     wanderMm = Math.round(wanderMm * 10) / 10;
   }
 
@@ -40,15 +45,21 @@ export function inferFrame(
     };
   });
 
-  const overlay = overlayForConveyor({ ...c, detectors });
-  // Re-apply wander shift from live value (Razor principle: edges move vs fixed idler centre)
-  const centre = 50;
-  const halfBelt = 28;
-  const shift = (wanderMm / c.beltWidthMm) * 40;
-  overlay.edgeL = centre - halfBelt + shift;
-  overlay.edgeR = centre + halfBelt + shift;
-  overlay.idlerL = centre - halfBelt;
-  overlay.idlerR = centre + halfBelt;
+  const overlay = overlayForConveyor({
+    ...c,
+    detectors: detectors.map((d) =>
+      d.kind === "misalignment"
+        ? { ...d, value: `${wanderMm > 0 ? "+" : ""}${Math.round(wanderMm)} mm` }
+        : d
+    ),
+  });
+
+  // Tiny pixel jitter so calibrated edges feel live without leaving the belt
+  if (c.overlayCal && c.status !== "offline") {
+    const j = (Math.random() - 0.5) * 0.6;
+    overlay.edgeL += j;
+    overlay.edgeR += j;
+  }
 
   return {
     conveyorId,

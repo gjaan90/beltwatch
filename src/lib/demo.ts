@@ -3,18 +3,55 @@ import type {
   Calibration,
   Conveyor,
   DetectorSnapshot,
+  OverlayCal,
   OverlayHint,
   Status,
 } from "./types";
 
-export type { Status, Conveyor, AlertEvidence, Calibration };
+export type { Status, Conveyor, AlertEvidence, Calibration, OverlayCal };
+
+/** Demo1 along-belt clip — measured from footage grids */
+export const demo1OverlayCal: OverlayCal = {
+  alignedEdgeL: 6,
+  alignedEdgeR: 93,
+  centre: 50,
+  // Matches the clip's own misalignment moment (teal edges in source)
+  driftEdgeL: 33,
+  driftEdgeR: 94,
+  lineTop: 8,
+  lineBottom: 10,
+};
 
 const baseOverlay = (
   wanderMm: number,
   beltWidthMm: number,
-  boxes?: OverlayHint["boxes"]
+  boxes?: OverlayHint["boxes"],
+  cal?: OverlayCal
 ): OverlayHint => {
-  // Centre gap ~ belt visual; wander shifts edges relative to idler refs
+  if (cal) {
+    const alarmMm = 15;
+    const t = Math.min(1, Math.abs(wanderMm) / alarmMm);
+    const driftL = cal.driftEdgeL ?? cal.alignedEdgeL;
+    const driftR = cal.driftEdgeR ?? cal.alignedEdgeR;
+    // Positive wander = drift right (same sign as Demo1 alarm)
+    const sign = wanderMm >= 0 ? 1 : -1;
+    const edgeL =
+      cal.alignedEdgeL + sign * t * (driftL - cal.alignedEdgeL);
+    const edgeR =
+      cal.alignedEdgeR + sign * t * (driftR - cal.alignedEdgeR);
+    return {
+      edgeL,
+      edgeR,
+      idlerL: cal.alignedEdgeL,
+      idlerR: cal.alignedEdgeR,
+      centre: cal.centre,
+      lineTop: cal.lineTop,
+      lineBottom: cal.lineBottom,
+      boxes,
+    };
+  }
+
+  // Generic fallback when no camera calibration exists
   const centre = 50;
   const halfBelt = 28;
   const shift = (wanderMm / beltWidthMm) * 40;
@@ -77,6 +114,7 @@ export const conveyors: Conveyor[] = [
     idlers: 24,
     material: "iron_ore",
     videoSrc: "/samples/demo1-misalignment.mp4",
+    overlayCal: demo1OverlayCal,
     detectors: detectorsFor(
       14,
       "alarm",
@@ -374,5 +412,10 @@ export function overlayForConveyor(c: Conveyor): OverlayHint {
       });
     }
   }
-  return baseOverlay(wander, c.beltWidthMm, boxes.length ? boxes : undefined);
+  return baseOverlay(
+    wander,
+    c.beltWidthMm,
+    boxes.length ? boxes : undefined,
+    c.overlayCal
+  );
 }
