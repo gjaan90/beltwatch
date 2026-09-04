@@ -1,0 +1,10 @@
+# Starter stub — replace by exporting from Roboflow (beltsight-misalignment)
+path: .
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: belt
+  1: idler
+  2: structure

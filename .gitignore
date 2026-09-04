@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+.env*
+*.log
+ml/datasets/**/images/
+ml/datasets/**/labels/
+ml/datasets/**/_rf_download/
+ml/weights/**/*.pt
+!ml/weights/**/.gitkeep

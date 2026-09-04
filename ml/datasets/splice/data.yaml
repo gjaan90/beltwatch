@@ -1,0 +1,12 @@
+# Starter stub — replace by exporting from Roboflow (beltsight-splice-clips)
+path: .
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: splice
+  1: clip
+  2: damage
+  3: wear
+  4: repair
