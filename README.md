@@ -28,8 +28,19 @@ Open [http://localhost:5000](http://localhost:5000).
 
 See [`ml/README.md`](ml/README.md) for Roboflow export, YOLO training, and geometry eval.
 
+## Misalignment principle
+
+Same approach used by industrial Visual AI demos (e.g. DataMind-style overlays):
+
+1. Track **belt outer edges** in the frame  
+2. Compare to a fixed **idler / structure centreline**  
+3. Convert pixel offset → **wander mm** via calibration  
+4. Show **trend**, yellow callout, and **“Belt Misalignment Detected”** when thresholds trip  
+
+Demo clip (local only): put `misalignment-demo.mp4` in `public/samples/` (gitignored).
+
 ## Status
 
-- UI: video-style viewport with belt/idler overlays and detection boxes
+- UI: live viewport with Razor-style edge / centreline / callout overlays
 - Inference: **mock stub** in `src/lib/inference.ts` (ready to swap for model sidecar)
-- Training: scripts under `ml/scripts/` — need your Roboflow API key + plant footage for production accuracy
+- Training: scripts under `ml/scripts/` — export from Roboflow Universe free, train locally

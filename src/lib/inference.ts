@@ -41,12 +41,14 @@ export function inferFrame(
   });
 
   const overlay = overlayForConveyor({ ...c, detectors });
-  // Re-apply wander shift from live value
+  // Re-apply wander shift from live value (Razor principle: edges move vs fixed idler centre)
   const centre = 50;
   const halfBelt = 28;
   const shift = (wanderMm / c.beltWidthMm) * 40;
   overlay.edgeL = centre - halfBelt + shift;
   overlay.edgeR = centre + halfBelt + shift;
+  overlay.idlerL = centre - halfBelt;
+  overlay.idlerR = centre + halfBelt;
 
   return {
     conveyorId,

@@ -8,3 +8,6 @@ ml/datasets/**/labels/
 ml/datasets/**/_rf_download/
 ml/weights/**/*.pt
 !ml/weights/**/.gitkeep
+tmp-razor/
+public/samples/*.mp4
+public/samples/*.webm

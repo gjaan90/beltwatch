@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { FrameInference, OverlayHint, Status } from "@/lib/types";
 
 type Props = {
@@ -11,7 +11,11 @@ type Props = {
   initialWanderMm: number;
   initialStatus: Status;
   offline?: boolean;
+  /** Optional hosted demo clip; falls back to synthetic belt if missing */
+  videoSrc?: string;
 };
+
+const HISTORY_LEN = 24;
 
 export default function VideoViewport({
   conveyorId,
@@ -21,9 +25,15 @@ export default function VideoViewport({
   initialWanderMm,
   initialStatus,
   offline = false,
+  videoSrc = "/samples/misalignment-demo.mp4",
 }: Props) {
   const [frame, setFrame] = useState<FrameInference | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [history, setHistory] = useState<number[]>(
+    Array.from({ length: HISTORY_LEN }, () => initialWanderMm)
+  );
+  const [videoOk, setVideoOk] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const overlay = frame?.overlay ?? initialOverlay;
   const wanderMm = frame?.wanderMm ?? initialWanderMm;
@@ -31,6 +41,21 @@ export default function VideoViewport({
   const mode = frame?.mode ?? "mock";
   const fps = frame?.fps ?? 0;
   const latencyMs = frame?.latencyMs ?? 0;
+  const showAlert = !offline && (status === "watch" || status === "alarm");
+
+  const idlerCentre = (overlay.idlerL + overlay.idlerR) / 2;
+  const beltCentre = (overlay.edgeL + overlay.edgeR) / 2;
+  const driftDir = beltCentre >= idlerCentre ? "right" : "left";
+
+  /** Yellow callout between drifted belt edge and the matching idler reference */
+  const misBox = useMemo(() => {
+    if (!showAlert) return null;
+    const edge = driftDir === "right" ? overlay.edgeR : overlay.edgeL;
+    const idler = driftDir === "right" ? overlay.idlerR : overlay.idlerL;
+    const left = Math.min(edge, idler) - 1;
+    const width = Math.max(4, Math.abs(edge - idler) + 2);
+    return { left, width, top: 22, height: 56 };
+  }, [showAlert, driftDir, overlay]);
 
   const poll = useCallback(async () => {
     if (offline) return;
@@ -42,6 +67,7 @@ export default function VideoViewport({
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = (await res.json()) as FrameInference;
       setFrame(data);
+      setHistory((h) => [...h.slice(1), data.wanderMm]);
       setError(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : "inference failed");
@@ -51,53 +77,103 @@ export default function VideoViewport({
   useEffect(() => {
     poll();
     if (offline) return;
-    const t = setInterval(poll, 900);
+    const t = setInterval(poll, 700);
     return () => clearInterval(t);
   }, [poll, offline]);
 
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.play().catch(() => {
+      /* autoplay may be blocked until unmute — muted loop should work */
+    });
+  }, [videoOk]);
+
+  const maxAbs = Math.max(20, ...history.map((v) => Math.abs(v)));
+
   return (
-    <div className={`viewport ${offline ? "offline-vp" : ""}`}>
+    <div className={`viewport razor-vp ${offline ? "offline-vp" : ""} ${status}`}>
       <div className="belt-scene" aria-hidden>
-        <div className="belt-surface" />
-        <div className="material-flow" />
+        {videoOk && !offline ? (
+          <video
+            ref={videoRef}
+            className="vp-video"
+            src={videoSrc}
+            muted
+            loop
+            playsInline
+            autoPlay
+            onError={() => setVideoOk(false)}
+          />
+        ) : (
+          <>
+            <div className="belt-surface" />
+            <div className="material-flow" />
+          </>
+        )}
+
+        {/* Structure / idler centreline reference (magenta dashed) — Razor principle */}
         <div
-          className="ref-line idler-l"
-          style={{ left: `${overlay.idlerL}%` }}
-          title="Idler reference L"
+          className="centre-ref"
+          style={{ left: `${idlerCentre}%` }}
+          title="Idler / structure centreline"
         />
+
+        {/* Measured belt outer edges (teal) */}
         <div
-          className="ref-line idler-r"
-          style={{ left: `${overlay.idlerR}%` }}
-          title="Idler reference R"
-        />
-        <div
-          className="edge-line edge-l"
+          className="edge-track edge-l"
           style={{ left: `${overlay.edgeL}%` }}
         />
         <div
-          className="edge-line edge-r"
+          className="edge-track edge-r"
           style={{ left: `${overlay.edgeR}%` }}
         />
-        <div className="centre-line" />
-        {(overlay.boxes ?? []).map((b, i) => (
+
+        {/* Idler bay side references (subtle) */}
+        <div
+          className="idler-tick"
+          style={{ left: `${overlay.idlerL}%` }}
+        />
+        <div
+          className="idler-tick"
+          style={{ left: `${overlay.idlerR}%` }}
+        />
+
+        {misBox ? (
           <div
-            key={`${b.label}-${i}`}
-            className={`det-box ${b.kind}`}
+            className="misalign-box"
             style={{
-              left: `${b.x}%`,
-              top: `${b.y}%`,
-              width: `${b.w}%`,
-              height: `${b.h}%`,
+              left: `${misBox.left}%`,
+              top: `${misBox.top}%`,
+              width: `${misBox.width}%`,
+              height: `${misBox.height}%`,
             }}
           >
-            <span>{b.label}</span>
+            <span>Misalignment</span>
           </div>
-        ))}
+        ) : null}
+
+        {(overlay.boxes ?? [])
+          .filter((b) => b.kind !== "misalignment")
+          .map((b, i) => (
+            <div
+              key={`${b.label}-${i}`}
+              className={`det-box ${b.kind}`}
+              style={{
+                left: `${b.x}%`,
+                top: `${b.y}%`,
+                width: `${b.w}%`,
+                height: `${b.h}%`,
+              }}
+            >
+              <span>{b.label}</span>
+            </div>
+          ))}
       </div>
 
       <div className="hud">
         <div>
-          {camera} · {mode} inference
+          {camera} · edge vs idler centreline · {mode}
           {error ? ` · err: ${error}` : ""}
         </div>
         <div className="meta" style={{ margin: 0 }}>
@@ -107,13 +183,53 @@ export default function VideoViewport({
         </div>
       </div>
 
-      <div className="gauge">
-        <span className="meta">Wander</span>
-        <b className={status}>
-          {wanderMm > 0 ? "+" : ""}
-          {wanderMm} mm
-        </b>
-        <span className="meta">edge vs idlers</span>
+      {showAlert ? (
+        <div className={`detect-badge ${status}`}>
+          Belt Misalignment Detected
+        </div>
+      ) : null}
+
+      <div className="gauge-stack">
+        <div className="gauge">
+          <span className="meta">Wander</span>
+          <b className={status}>
+            {wanderMm > 0 ? "+" : ""}
+            {wanderMm} mm
+          </b>
+          <span className="meta">
+            {offline ? "offline" : `drift ${driftDir}`}
+          </span>
+        </div>
+        <div className="spark" title="Wander trend (mm)">
+          <svg viewBox={`0 0 ${HISTORY_LEN} 28`} preserveAspectRatio="none">
+            <polyline
+              fill="none"
+              stroke={
+                status === "alarm"
+                  ? "#ff5d5d"
+                  : status === "watch"
+                    ? "#f0b429"
+                    : "#3dd68c"
+              }
+              strokeWidth="1.5"
+              points={history
+                .map((v, i) => {
+                  const y = 14 - (v / maxAbs) * 12;
+                  return `${i},${y}`;
+                })
+                .join(" ")}
+            />
+            <line
+              x1="0"
+              y1="14"
+              x2={HISTORY_LEN}
+              y2="14"
+              stroke="#ffffff22"
+              strokeWidth="1"
+            />
+          </svg>
+          <span className="meta">trend</span>
+        </div>
       </div>
 
       <div className="legend">
@@ -121,10 +237,10 @@ export default function VideoViewport({
           <i className="lg-edge" /> Belt edge
         </span>
         <span>
-          <i className="lg-idler" /> Idler ref
+          <i className="lg-centre" /> Centreline ref
         </span>
         <span>
-          <i className="lg-box" /> Detection
+          <i className="lg-mis" /> Misalignment
         </span>
       </div>
     </div>

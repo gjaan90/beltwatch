@@ -20,21 +20,22 @@ export default function EvidenceCard({
       <div className="evidence-thumb" aria-hidden>
         <div className="belt-surface mini" />
         <div
-          className="edge-line"
-          style={{ left: `${o.edgeL}%`, width: 2 }}
+          className="centre-ref"
+          style={{ left: `${(o.idlerL + o.idlerR) / 2}%` }}
         />
-        <div
-          className="edge-line"
-          style={{ left: `${o.edgeR}%`, width: 2 }}
-        />
-        <div
-          className="ref-line"
-          style={{ left: `${o.idlerL}%`, opacity: 0.7 }}
-        />
-        <div
-          className="ref-line"
-          style={{ left: `${o.idlerR}%`, opacity: 0.7 }}
-        />
+        <div className="edge-track" style={{ left: `${o.edgeL}%` }} />
+        <div className="edge-track" style={{ left: `${o.edgeR}%` }} />
+        {alert.kind === "misalignment" && alert.status !== "ok" ? (
+          <div
+            className="misalign-box"
+            style={{
+              left: `${Math.min(o.edgeR, o.idlerR) - 1}%`,
+              top: "20%",
+              width: `${Math.max(4, Math.abs(o.edgeR - o.idlerR) + 2)}%`,
+              height: "55%",
+            }}
+          />
+        ) : null}
         {(o.boxes ?? []).map((b, i) => (
           <div
             key={i}

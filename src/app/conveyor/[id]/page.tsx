@@ -38,7 +38,9 @@ export default async function ConveyorPage({
         <h1>{c.name}</h1>
         <p className="lead">
           {c.region} · belt {c.beltWidthMm} mm · {c.cameras} cameras ·{" "}
-          {c.material.replace("_", " ")}
+          {c.material.replace("_", " ")}. Misalignment uses the same principle as
+          industrial Visual AI: track belt edges against the idler centreline,
+          trend wander in mm, then raise Watch / Alarm with on-screen evidence.
         </p>
 
         <DetectorStrip detectors={c.detectors} />
