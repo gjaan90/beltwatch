@@ -40,7 +40,7 @@ export default async function ConveyorPage({
           {c.region} · belt {c.beltWidthMm} mm · {c.cameras} cameras ·{" "}
           {c.material.replace("_", " ")}
           {c.id === "demo1"
-            ? ". Demo machine with along-belt misalignment footage — overlays show how Alarm looks on live video (mock wander until models are trained)."
+            ? ". Demo machine with along-belt footage. Teal edges are from a real frame-by-frame edge track extracted from this video (not mock placeholders)."
             : ". Misalignment uses the same principle as industrial Visual AI: track belt edges against the idler centreline, trend wander in mm, then raise Watch / Alarm with on-screen evidence."}
         </p>
 
@@ -56,6 +56,7 @@ export default async function ConveyorPage({
             initialStatus={mis?.status ?? c.status}
             offline={c.status === "offline"}
             videoSrc={c.videoSrc}
+            edgeTrackUrl={c.edgeTrackUrl}
           />
           <div>
             <div className="card">

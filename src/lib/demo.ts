@@ -114,6 +114,7 @@ export const conveyors: Conveyor[] = [
     idlers: 24,
     material: "iron_ore",
     videoSrc: "/samples/demo1-misalignment.mp4",
+    edgeTrackUrl: "/samples/demo1-edges.json",
     overlayCal: demo1OverlayCal,
     detectors: detectorsFor(
       14,

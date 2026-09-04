@@ -35,6 +35,8 @@ export type Conveyor = {
   detectors: DetectorSnapshot[];
   /** Optional demo / live camera clip served from /public */
   videoSrc?: string;
+  /** Precomputed real edge timeline JSON (from extract_demo1_edges.py) */
+  edgeTrackUrl?: string;
   /** Camera-specific overlay geometry for this view */
   overlayCal?: OverlayCal;
 };

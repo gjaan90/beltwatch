@@ -11,6 +11,7 @@ ml/weights/**/*.pt
 tmp-razor/
 public/samples/*.mp4
 public/samples/*.webm
+# keep demo1-edges.json tracked (small); ignore other generated media
 ml/runs/**/frames/
 ml/runs/**/series.csv
 *.mkv

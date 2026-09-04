@@ -1,0 +1,2711 @@
+{
+  "video": "demo1-misalignment.mp4",
+  "fps": 30.0,
+  "width": 3840,
+  "height": 2160,
+  "centre": 50.0,
+  "method": "structure-to-belt gradient (neon overlays suppressed)",
+  "frames": [
+    {
+      "t": 0.0,
+      "frame": 0,
+      "edgeL": 17.58,
+      "edgeR": 88.0,
+      "beltC": 52.79,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 7.3
+    },
+    {
+      "t": 0.033,
+      "frame": 1,
+      "edgeL": 23.44,
+      "edgeR": 88.0,
+      "beltC": 55.72,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 10.8
+    },
+    {
+      "t": 0.067,
+      "frame": 2,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.1,
+      "frame": 3,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.133,
+      "frame": 4,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.167,
+      "frame": 5,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.2,
+      "frame": 6,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.233,
+      "frame": 7,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.267,
+      "frame": 8,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.3,
+      "frame": 9,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.333,
+      "frame": 10,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.367,
+      "frame": 11,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.4,
+      "frame": 12,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.433,
+      "frame": 13,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.467,
+      "frame": 14,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.5,
+      "frame": 15,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.533,
+      "frame": 16,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.567,
+      "frame": 17,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.6,
+      "frame": 18,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.633,
+      "frame": 19,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.667,
+      "frame": 20,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.7,
+      "frame": 21,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.733,
+      "frame": 22,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.767,
+      "frame": 23,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.8,
+      "frame": 24,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.833,
+      "frame": 25,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.867,
+      "frame": 26,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.9,
+      "frame": 27,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.933,
+      "frame": 28,
+      "edgeL": 29.3,
+      "edgeR": 94.84,
+      "beltC": 62.07,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 0.967,
+      "frame": 29,
+      "edgeL": 29.31,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.0,
+      "frame": 30,
+      "edgeL": 29.31,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.033,
+      "frame": 31,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.067,
+      "frame": 32,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.1,
+      "frame": 33,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.133,
+      "frame": 34,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.167,
+      "frame": 35,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.2,
+      "frame": 36,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.233,
+      "frame": 37,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.267,
+      "frame": 38,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.3,
+      "frame": 39,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.333,
+      "frame": 40,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.367,
+      "frame": 41,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.4,
+      "frame": 42,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.433,
+      "frame": 43,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.467,
+      "frame": 44,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.5,
+      "frame": 45,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.533,
+      "frame": 46,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.567,
+      "frame": 47,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.6,
+      "frame": 48,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.633,
+      "frame": 49,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.667,
+      "frame": 50,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.7,
+      "frame": 51,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.733,
+      "frame": 52,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.767,
+      "frame": 53,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.8,
+      "frame": 54,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.833,
+      "frame": 55,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.867,
+      "frame": 56,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.9,
+      "frame": 57,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.933,
+      "frame": 58,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 1.967,
+      "frame": 59,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.053,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.0,
+      "frame": 60,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.033,
+      "frame": 61,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.067,
+      "frame": 62,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.1,
+      "frame": 63,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.133,
+      "frame": 64,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.167,
+      "frame": 65,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.2,
+      "frame": 66,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.233,
+      "frame": 67,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.267,
+      "frame": 68,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.3,
+      "frame": 69,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.333,
+      "frame": 70,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.367,
+      "frame": 71,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.4,
+      "frame": 72,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.433,
+      "frame": 73,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.467,
+      "frame": 74,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.5,
+      "frame": 75,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.533,
+      "frame": 76,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.567,
+      "frame": 77,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.6,
+      "frame": 78,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.633,
+      "frame": 79,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.667,
+      "frame": 80,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.7,
+      "frame": 81,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.733,
+      "frame": 82,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.767,
+      "frame": 83,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.8,
+      "frame": 84,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.833,
+      "frame": 85,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.867,
+      "frame": 86,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.9,
+      "frame": 87,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.933,
+      "frame": 88,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 2.967,
+      "frame": 89,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.0,
+      "frame": 90,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.033,
+      "frame": 91,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.067,
+      "frame": 92,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.1,
+      "frame": 93,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.133,
+      "frame": 94,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.167,
+      "frame": 95,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.2,
+      "frame": 96,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.233,
+      "frame": 97,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.267,
+      "frame": 98,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.3,
+      "frame": 99,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.333,
+      "frame": 100,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.367,
+      "frame": 101,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.4,
+      "frame": 102,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.433,
+      "frame": 103,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.467,
+      "frame": 104,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.5,
+      "frame": 105,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.533,
+      "frame": 106,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.567,
+      "frame": 107,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.6,
+      "frame": 108,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.633,
+      "frame": 109,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.667,
+      "frame": 110,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.7,
+      "frame": 111,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.733,
+      "frame": 112,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.767,
+      "frame": 113,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.8,
+      "frame": 114,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.833,
+      "frame": 115,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.867,
+      "frame": 116,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.9,
+      "frame": 117,
+      "edgeL": 29.32,
+      "edgeR": 94.84,
+      "beltC": 62.08,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 14.3
+    },
+    {
+      "t": 3.933,
+      "frame": 118,
+      "edgeL": 24.55,
+      "edgeR": 95.77,
+      "beltC": 60.16,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 11.5
+    },
+    {
+      "t": 3.967,
+      "frame": 119,
+      "edgeL": 19.78,
+      "edgeR": 96.7,
+      "beltC": 58.24,
+      "conf": 0.055,
+      "centre": 50.0,
+      "wanderMm": 8.6
+    },
+    {
+      "t": 4.0,
+      "frame": 120,
+      "edgeL": 15.0,
+      "edgeR": 97.64,
+      "beltC": 56.32,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": 5.7
+    },
+    {
+      "t": 4.033,
+      "frame": 121,
+      "edgeL": 10.23,
+      "edgeR": 98.57,
+      "beltC": 54.4,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 2.9
+    },
+    {
+      "t": 4.067,
+      "frame": 122,
+      "edgeL": 5.45,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 4.1,
+      "frame": 123,
+      "edgeL": 5.45,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 4.133,
+      "frame": 124,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.167,
+      "frame": 125,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.2,
+      "frame": 126,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.233,
+      "frame": 127,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.267,
+      "frame": 128,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.3,
+      "frame": 129,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.333,
+      "frame": 130,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.367,
+      "frame": 131,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.4,
+      "frame": 132,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.433,
+      "frame": 133,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.467,
+      "frame": 134,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.5,
+      "frame": 135,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.533,
+      "frame": 136,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.567,
+      "frame": 137,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.6,
+      "frame": 138,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.633,
+      "frame": 139,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.667,
+      "frame": 140,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.7,
+      "frame": 141,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.733,
+      "frame": 142,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.767,
+      "frame": 143,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.8,
+      "frame": 144,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.833,
+      "frame": 145,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.867,
+      "frame": 146,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.9,
+      "frame": 147,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.933,
+      "frame": 148,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 4.967,
+      "frame": 149,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.0,
+      "frame": 150,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.033,
+      "frame": 151,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.067,
+      "frame": 152,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.1,
+      "frame": 153,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.133,
+      "frame": 154,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.167,
+      "frame": 155,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.2,
+      "frame": 156,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.233,
+      "frame": 157,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.267,
+      "frame": 158,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.3,
+      "frame": 159,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.333,
+      "frame": 160,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.367,
+      "frame": 161,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.4,
+      "frame": 162,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.433,
+      "frame": 163,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.467,
+      "frame": 164,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.5,
+      "frame": 165,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.533,
+      "frame": 166,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.567,
+      "frame": 167,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.6,
+      "frame": 168,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.633,
+      "frame": 169,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.667,
+      "frame": 170,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.7,
+      "frame": 171,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.733,
+      "frame": 172,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.767,
+      "frame": 173,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.8,
+      "frame": 174,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.833,
+      "frame": 175,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.867,
+      "frame": 176,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.9,
+      "frame": 177,
+      "edgeL": 5.44,
+      "edgeR": 99.5,
+      "beltC": 52.47,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": -0.0
+    },
+    {
+      "t": 5.933,
+      "frame": 178,
+      "edgeL": 5.45,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 5.967,
+      "frame": 179,
+      "edgeL": 5.46,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.008,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.0,
+      "frame": 180,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.033,
+      "frame": 181,
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.067,
+      "frame": 182,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.1,
+      "frame": 183,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.133,
+      "frame": 184,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.167,
+      "frame": 185,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.2,
+      "frame": 186,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.233,
+      "frame": 187,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.267,
+      "frame": 188,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.3,
+      "frame": 189,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.333,
+      "frame": 190,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.367,
+      "frame": 191,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.4,
+      "frame": 192,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.433,
+      "frame": 193,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.467,
+      "frame": 194,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.5,
+      "frame": 195,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.533,
+      "frame": 196,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.567,
+      "frame": 197,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.6,
+      "frame": 198,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.633,
+      "frame": 199,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.667,
+      "frame": 200,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.7,
+      "frame": 201,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.733,
+      "frame": 202,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.767,
+      "frame": 203,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.8,
+      "frame": 204,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.833,
+      "frame": 205,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.867,
+      "frame": 206,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.9,
+      "frame": 207,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.933,
+      "frame": 208,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 6.967,
+      "frame": 209,
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.0,
+      "frame": 210,
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.033,
+      "frame": 211,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.067,
+      "frame": 212,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.1,
+      "frame": 213,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.133,
+      "frame": 214,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.167,
+      "frame": 215,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.2,
+      "frame": 216,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.233,
+      "frame": 217,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.267,
+      "frame": 218,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.3,
+      "frame": 219,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.333,
+      "frame": 220,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.367,
+      "frame": 221,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.4,
+      "frame": 222,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.433,
+      "frame": 223,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.467,
+      "frame": 224,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.5,
+      "frame": 225,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.533,
+      "frame": 226,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.567,
+      "frame": 227,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.6,
+      "frame": 228,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.633,
+      "frame": 229,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.667,
+      "frame": 230,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.7,
+      "frame": 231,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.733,
+      "frame": 232,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.767,
+      "frame": 233,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.8,
+      "frame": 234,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.833,
+      "frame": 235,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.867,
+      "frame": 236,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.9,
+      "frame": 237,
+      "edgeL": 5.47,
+      "edgeR": 99.5,
+      "beltC": 52.48,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.933,
+      "frame": 238,
+      "edgeL": 5.48,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 7.967,
+      "frame": 239,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.007,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.0,
+      "frame": 240,
+      "edgeL": 5.5,
+      "edgeR": 99.5,
+      "beltC": 52.5,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.033,
+      "frame": 241,
+      "edgeL": 5.51,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.067,
+      "frame": 242,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.1,
+      "frame": 243,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.133,
+      "frame": 244,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.167,
+      "frame": 245,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.2,
+      "frame": 246,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.233,
+      "frame": 247,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.267,
+      "frame": 248,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.3,
+      "frame": 249,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.333,
+      "frame": 250,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.367,
+      "frame": 251,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.4,
+      "frame": 252,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.433,
+      "frame": 253,
+      "edgeL": 5.52,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.467,
+      "frame": 254,
+      "edgeL": 5.51,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.5,
+      "frame": 255,
+      "edgeL": 5.51,
+      "edgeR": 99.5,
+      "beltC": 52.51,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.533,
+      "frame": 256,
+      "edgeL": 5.5,
+      "edgeR": 99.5,
+      "beltC": 52.5,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.567,
+      "frame": 257,
+      "edgeL": 5.5,
+      "edgeR": 99.5,
+      "beltC": 52.5,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.6,
+      "frame": 258,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.633,
+      "frame": 259,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.667,
+      "frame": 260,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.7,
+      "frame": 261,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.733,
+      "frame": 262,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.767,
+      "frame": 263,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.8,
+      "frame": 264,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.833,
+      "frame": 265,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.867,
+      "frame": 266,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.9,
+      "frame": 267,
+      "edgeL": 5.49,
+      "edgeR": 99.5,
+      "beltC": 52.49,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": 0.0
+    },
+    {
+      "t": 8.933,
+      "frame": 268,
+      "edgeL": 4.39,
+      "edgeR": 88.0,
+      "beltC": 46.2,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": -0.6
+    },
+    {
+      "t": 8.967,
+      "frame": 269,
+      "edgeL": 3.29,
+      "edgeR": 88.0,
+      "beltC": 45.65,
+      "conf": 0.006,
+      "centre": 50.0,
+      "wanderMm": -1.3
+    }
+  ],
+  "wanderNote": "demo-scaled from left-edge drift so clip maps to ~mm alarms; edges are real detections"
+}

@@ -1,6 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  sampleEdgeTrack,
+  statusFromWander,
+  type EdgeTrack,
+} from "@/lib/edgeTrack";
 import type { FrameInference, OverlayHint, Status } from "@/lib/types";
 
 type Props = {
@@ -13,6 +18,8 @@ type Props = {
   offline?: boolean;
   /** Optional hosted demo clip; falls back to synthetic belt if missing */
   videoSrc?: string;
+  /** Precomputed real edge timeline for this clip (JSON in /public) */
+  edgeTrackUrl?: string;
 };
 
 const HISTORY_LEN = 24;
@@ -26,6 +33,7 @@ export default function VideoViewport({
   initialStatus,
   offline = false,
   videoSrc,
+  edgeTrackUrl,
 }: Props) {
   const resolvedVideo = videoSrc ?? "/samples/misalignment-demo.mp4";
   const [frame, setFrame] = useState<FrameInference | null>(null);
@@ -34,18 +42,24 @@ export default function VideoViewport({
     Array.from({ length: HISTORY_LEN }, () => initialWanderMm)
   );
   const [videoOk, setVideoOk] = useState(true);
+  const [track, setTrack] = useState<EdgeTrack | null>(null);
+  const [liveOverlay, setLiveOverlay] = useState<OverlayHint | null>(null);
+  const [liveWander, setLiveWander] = useState(initialWanderMm);
+  const [liveStatus, setLiveStatus] = useState<Status>(initialStatus);
+  const [detectMode, setDetectMode] = useState<"mock" | "video-edges">("mock");
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const overlay = frame?.overlay ?? initialOverlay;
-  const wanderMm = frame?.wanderMm ?? initialWanderMm;
-  const status = frame?.wanderStatus ?? initialStatus;
-  const mode = frame?.mode ?? "mock";
-  const fps = frame?.fps ?? 0;
-  const latencyMs = frame?.latencyMs ?? 0;
+  const usingTrack = Boolean(edgeTrackUrl && track);
+
+  const overlay = liveOverlay ?? frame?.overlay ?? initialOverlay;
+  const wanderMm = usingTrack ? liveWander : (frame?.wanderMm ?? initialWanderMm);
+  const status = usingTrack ? liveStatus : (frame?.wanderStatus ?? initialStatus);
+  const mode = usingTrack ? detectMode : (frame?.mode ?? "mock");
+  const fps = usingTrack ? Math.round(track?.fps ?? 0) : (frame?.fps ?? 0);
+  const latencyMs = usingTrack ? 0 : (frame?.latencyMs ?? 0);
   const showAlert = !offline && (status === "watch" || status === "alarm");
 
-  const centreLine =
-    overlay.centre ?? (overlay.idlerL + overlay.idlerR) / 2;
+  const centreLine = overlay.centre ?? (overlay.idlerL + overlay.idlerR) / 2;
   const beltCentre = (overlay.edgeL + overlay.edgeR) / 2;
   const driftDir = beltCentre >= centreLine ? "right" : "left";
   const lineTop = overlay.lineTop ?? 8;
@@ -55,10 +69,8 @@ export default function VideoViewport({
     bottom: `${lineBottom}%`,
   } as const;
 
-  /** Yellow callout: gap between centreline and the side the belt drifted from */
   const misBox = useMemo(() => {
     if (!showAlert) return null;
-    // Belt drifted right → highlight left gap between aligned left and current left edge
     if (driftDir === "right") {
       const left = Math.min(overlay.idlerL, overlay.edgeL);
       const right = Math.max(centreLine, overlay.edgeL);
@@ -79,8 +91,76 @@ export default function VideoViewport({
     };
   }, [showAlert, driftDir, overlay, centreLine, lineTop, lineBottom]);
 
+  // Load real edge track for Demo1-style clips
+  useEffect(() => {
+    if (!edgeTrackUrl) {
+      setTrack(null);
+      setDetectMode("mock");
+      return;
+    }
+    let cancelled = false;
+    fetch(edgeTrackUrl)
+      .then((r) => {
+        if (!r.ok) throw new Error(`edge track HTTP ${r.status}`);
+        return r.json();
+      })
+      .then((data: EdgeTrack) => {
+        if (cancelled) return;
+        setTrack(data);
+        setDetectMode("video-edges");
+        setError(null);
+      })
+      .catch((e) => {
+        if (cancelled) return;
+        setTrack(null);
+        setDetectMode("mock");
+        setError(e instanceof Error ? e.message : "edge track failed");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [edgeTrackUrl]);
+
+  const applyTrackSample = useCallback(() => {
+    const v = videoRef.current;
+    if (!v || !track) return;
+    const sample = sampleEdgeTrack(track, v.currentTime);
+    if (!sample) return;
+    const st = statusFromWander(sample.wanderMm);
+    setLiveWander(sample.wanderMm);
+    setLiveStatus(st);
+    setLiveOverlay({
+      edgeL: sample.edgeL,
+      edgeR: sample.edgeR,
+      idlerL: 6,
+      idlerR: 93,
+      centre: sample.centre ?? track.centre ?? 50,
+      lineTop: 8,
+      lineBottom: 10,
+    });
+    setHistory((h) => [...h.slice(1), sample.wanderMm]);
+  }, [track]);
+
+  useEffect(() => {
+    if (!usingTrack) return;
+    const v = videoRef.current;
+    if (!v) return;
+    const onTime = () => applyTrackSample();
+    v.addEventListener("timeupdate", onTime);
+    v.addEventListener("seeked", onTime);
+    v.addEventListener("play", onTime);
+    const raf = window.setInterval(applyTrackSample, 100);
+    applyTrackSample();
+    return () => {
+      v.removeEventListener("timeupdate", onTime);
+      v.removeEventListener("seeked", onTime);
+      v.removeEventListener("play", onTime);
+      window.clearInterval(raf);
+    };
+  }, [usingTrack, applyTrackSample]);
+
   const poll = useCallback(async () => {
-    if (offline) return;
+    if (offline || usingTrack) return;
     try {
       const res = await fetch(
         `/api/inference/${conveyorId}?camera=${encodeURIComponent(camera)}`,
@@ -94,14 +174,15 @@ export default function VideoViewport({
     } catch (e) {
       setError(e instanceof Error ? e.message : "inference failed");
     }
-  }, [conveyorId, camera, offline]);
+  }, [conveyorId, camera, offline, usingTrack]);
 
   useEffect(() => {
+    if (usingTrack) return;
     poll();
     if (offline) return;
     const t = setInterval(poll, 700);
     return () => clearInterval(t);
-  }, [poll, offline]);
+  }, [poll, offline, usingTrack]);
 
   useEffect(() => {
     setVideoOk(true);
@@ -112,7 +193,7 @@ export default function VideoViewport({
     if (!v || !videoOk) return;
     v.load();
     v.play().catch(() => {
-      /* autoplay may be blocked — muted loop should work */
+      /* muted autoplay should work */
     });
   }, [videoOk, resolvedVideo]);
 
@@ -139,14 +220,12 @@ export default function VideoViewport({
           </>
         )}
 
-        {/* Structure / idler centreline reference (magenta dashed) */}
         <div
           className="centre-ref"
           style={{ left: `${centreLine}%`, ...lineStyle }}
-          title="Idler / structure centreline"
+          title="Structure centreline"
         />
 
-        {/* Measured belt outer edges (teal) — calibrated to footage when overlayCal set */}
         <div
           className="edge-track edge-l"
           style={{ left: `${overlay.edgeL}%`, ...lineStyle }}
@@ -190,13 +269,16 @@ export default function VideoViewport({
 
       <div className="hud">
         <div>
-          {camera} · edge vs idler centreline · {mode}
+          {camera} ·{" "}
+          {usingTrack
+            ? "real edge track synced to video"
+            : "edge vs centreline · mock"}
           {error ? ` · err: ${error}` : ""}
         </div>
         <div className="meta" style={{ margin: 0 }}>
           {offline
             ? "No stream"
-            : `${fps} fps · ${latencyMs} ms · belt ${beltWidthMm} mm`}
+            : `${fps} fps · ${latencyMs} ms · belt ${beltWidthMm} mm · mode ${mode}`}
         </div>
       </div>
 
