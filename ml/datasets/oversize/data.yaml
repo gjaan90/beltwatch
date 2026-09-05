@@ -1,9 +1,0 @@
-# Starter stub — replace by exporting from Roboflow (beltsight-oversize)
-path: .
-train: images/train
-val: images/val
-test: images/test
-
-names:
-  0: lump
-  1: foreign_object

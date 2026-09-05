@@ -40,7 +40,7 @@ export default function VideoViewport({
   edgeTrackUrl,
   yoloTrackUrl,
 }: Props) {
-  const resolvedVideo = videoSrc ?? "/samples/misalignment-demo.mp4";
+  const resolvedVideo = videoSrc ?? "/samples/demo1-misalignment.mp4";
   const [frame, setFrame] = useState<FrameInference | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<number[]>(

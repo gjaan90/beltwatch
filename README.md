@@ -2,9 +2,9 @@
 
 GitHub: [gjaan90/beltwatch](https://github.com/gjaan90/beltwatch)
 
-Conveyor vision preview for SKF Australia: **misalignment**, **oversized load**, and **splice & clips**.
+Conveyor vision preview: **misalignment**, **oversized load**, and **splice & clips**.
 
-## App (Next.js)
+## Run on another PC
 
 ```bash
 git clone https://github.com/gjaan90/beltwatch.git
@@ -13,34 +13,30 @@ npm install
 npm run dev -- -p 5000
 ```
 
-Open [http://localhost:5000](http://localhost:5000).
+Open [http://localhost:5000/conveyor/demo1](http://localhost:5000/conveyor/demo1)
+
+Included for Demo1 (no retrain needed):
+
+| Asset | Path |
+|-------|------|
+| Along-belt demo video | `public/samples/demo1-misalignment.mp4` (~19 MB) |
+| Edge track | `public/samples/demo1-edges.json` |
+| YOLO detections | `public/samples/demo1-yolo.json` |
+| Misalignment weights | `ml/weights/misalignment/best.pt` |
+| Splice / oversize weights | `ml/weights/splice/best.pt`, `ml/weights/oversize/best.pt` |
+
+Optional Roboflow key (training only): copy `.env.example` → `.env.txt` and set `ROBOFLOW_API_KEY`.
+
+## Routes
 
 | Route | Purpose |
 |-------|---------|
-| `/plant` | Sites & conveyors with three-detector summary |
-| `/conveyor/[id]` | Live mock viewport, overlays, evidence, idler map |
-| `/alerts` | Evidence-first alert feed |
-| `/models` | Roboflow / YOLO pipeline overview |
-| `/settings` | Calibration (px/mm, thresholds) |
-| `GET /api/inference/[id]` | Mock frame inference (wander jitter + overlays) |
+| `/plant` | Sites & conveyors |
+| `/conveyor/demo1` | Demo video + YOLO + edge overlays |
+| `/alerts` | Evidence feed |
+| `/models` | Model pipeline notes |
+| `/settings` | Calibration |
 
-## ML pipeline
+## ML
 
-See [`ml/README.md`](ml/README.md) for Roboflow export, YOLO training, and geometry eval.
-
-## Misalignment principle
-
-Same approach used by industrial Visual AI demos (e.g. DataMind-style overlays):
-
-1. Track **belt outer edges** in the frame  
-2. Compare to a fixed **idler / structure centreline**  
-3. Convert pixel offset → **wander mm** via calibration  
-4. Show **trend**, yellow callout, and **“Belt Misalignment Detected”** when thresholds trip  
-
-Demo clip (local only): put `misalignment-demo.mp4` in `public/samples/` (gitignored).
-
-## Status
-
-- UI: live viewport with Razor-style edge / centreline / callout overlays
-- Inference: **mock stub** in `src/lib/inference.ts` (ready to swap for model sidecar)
-- Training: scripts under `ml/scripts/` — export from Roboflow Universe free, train locally
+See [`ml/README.md`](ml/README.md). Overnight Roboflow train: `python ml/scripts/overnight_roboflow_train.py`

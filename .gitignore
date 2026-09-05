@@ -1,18 +1,38 @@
 node_modules
 .next
 out
-.env*
+.env
+.env.*
+!.env.example
 *.log
+__pycache__/
+*.pyc
+
+# Large / regenerated datasets (Roboflow exports)
 ml/datasets/**/images/
 ml/datasets/**/labels/
-ml/datasets/**/_rf_download/
+ml/datasets/**/_rf*/
+ml/datasets/**/rf_*/
+ml/datasets/**/Conveyor-Belt-*/
+ml/datasets/**/data.stub.yaml
+Conveyor-Belt-*/
+
+# Keep deployable weights; ignore training run junk
 ml/weights/**/*.pt
-!ml/weights/**/.gitkeep
+!ml/weights/**/best.pt
+!ml/weights/**/roboflow_universe.pt
+ml/weights/**/*.png
+ml/weights/**/*.jpg
+ml/weights/**/*.csv
+ml/weights/**/args.yaml
+ml/weights/**/weights/
+runs/
+yolov8*.pt
 tmp-razor/
+ml/runs/
+ml/scripts/__pycache__/
+
+# Samples: track Demo1 video + JSON tracks; ignore other media
 public/samples/*.mp4
 public/samples/*.webm
-# keep demo1-edges.json tracked (small); ignore other generated media
-ml/runs/**/frames/
-ml/runs/**/series.csv
-*.mkv
-*.webm
+!public/samples/demo1-misalignment.mp4
